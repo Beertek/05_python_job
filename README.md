@@ -2,23 +2,23 @@
 
 Инструкция по запуску тестов:
 
-# Запуск всех тестов
+### Запуск всех тестов
 python -m unittest discover
 
-# Запуск конкретного модуля
+### Запуск конкретного модуля
 python -m unittest test_python.py
 python -m unittest test_filemanager.py
 python -m unittest test_filemanager_mock.py
 
-# Запуск с подробным выводом
+### Запуск с подробным выводом
 python -m unittest -v test_python.py
 
-# Запуск конкретного теста
+### Запуск конкретного теста
 python -m unittest test_python.TestBuiltinFunctions.test_filter_even_numbers
 
 Что тестируется:
 
-# В test_python.py:
+### В test_python.py:
 
     filter - 7 тестов (четные/нечетные числа, строки, None значения и т.д.)
 
@@ -36,7 +36,7 @@ python -m unittest test_python.TestBuiltinFunctions.test_filter_even_numbers
 
     Комбинации функций - 4 теста
 
-# В test_filemanager.py:
+### В test_filemanager.py:
 
     Банковский счет - 10 тестов (загрузка/сохранение данных, бизнес-логика)
 
@@ -46,7 +46,7 @@ python -m unittest test_python.TestBuiltinFunctions.test_filter_even_numbers
 
     Вспомогательные функции - 5 тестов
 
-# В test_filemanager_mock.py:
+### В test_filemanager_mock.py:
 
     Создание папки - 3 теста с моками
 
